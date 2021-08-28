@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Updating And Installing Dependencies"
+echo \
+
+sudo apt-get update
+sudo apt-get install -y build-essential autoconf automake libtool pkg-config libcurl4-openssl-dev libudev-dev libusb-1.0-0-dev libncurses5-dev
+
+echo "Configuring And Installing cgminer"
+echo \
+
+cd cgminer
+CFLAGS="-O2" ./autogen.sh --enable-gekko
+make -j 2
+echo \
+tput setaf 6; echo "Done!"
