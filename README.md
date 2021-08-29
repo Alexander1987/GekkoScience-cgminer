@@ -1,6 +1,5 @@
 # Gekkoscience-cgminer
 cgminer for Gekkoscience Miners
-
 Usage:
 
 First run the AutoInstaller to compile and install cgminer.
