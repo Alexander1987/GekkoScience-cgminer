@@ -22,12 +22,13 @@ echo \
 
 echo "Miner Frequency"
 echo "Can be 100, 125, 150, 175, 200"
-echo "Use cooling for anything passed 100"
+echo "**Use cooling for anything passed 100!**"
 read varfreq
 echo \
 
 echo "Extra Arguments For cgminer"
 echo "Example: --suggest-diff 32"
+echo "**If None hit Enter**"
 read varextra
 
 > $varsave
