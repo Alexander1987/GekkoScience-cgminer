@@ -1,5 +1,5 @@
-# DualMiner-cgminer
-cgminer for One Chip DualMiner USB
+# Gekkoscience-cgminer
+cgminer for Gekkoscience Miners
 
 Usage:
 
