@@ -41,7 +41,7 @@ Sixth, Choose Frequency for Miner, cooling is recommended for anything past 100!
 
 	  Miner Frequency:
 	  Can be 100, 125, 150, 175, 200
-	  **Use cooling for anything passed 100!**
+	  **Use Cooling and Powered Hub for anything passed 100!**
 	$ 100
 
 Seventh, Now you can Insert any extra arguments for cgminer, If none just hit enter.
