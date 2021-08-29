@@ -15,6 +15,11 @@ echo "Worker Password:"
 read varpass
 echo \
 
+echo "Miner Type"
+echo "2pac or newpac"
+read varminer
+echo \
+
 echo "Miner Frequency"
 echo "Can be 100, 125, 150, 175, 200"
 echo "Use cooling for anything passed 100"
@@ -24,10 +29,11 @@ echo \
 echo "Extra Arguments For cgminer"
 echo "Example: --suggest-diff 32"
 read varextra
+
 > $varsave
 
 echo "#!/bin/bash" >> $varsave
 echo "cd cgminer" >> $varsave
-echo "sudo ./cgminer -o $varlink -u $varworker -p $varpass $varextra --gekko-newpac-freq $varfreq" >> $varsave
+echo "sudo ./cgminer -o $varlink -u $varworker -p $varpass $varextra --gekko-$varminer-freq $varfreq" >> $varsave
 
 chmod +x $varsave
